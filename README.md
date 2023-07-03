@@ -1,6 +1,6 @@
 # JavaScript Project - Photo Gallery
 
-This is a JavaScript project showcasing a beautiful and interactive photo gallery. It is designed to demonstrate your JavaScript skills and create an impressive portfolio piece for job applications.
+This is a JavaScript project showcasing a beautiful and interactive photo gallery.
 
 ## Features
 
