@@ -1,0 +1,89 @@
+body {
+    background-color: #f1f1f1;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #gallery {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image.active {
+    opacity: 1;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(to right, #667eea, #764ba2);
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to right, #764ba2, #667eea);
+  }
+  
+  .glow-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.7);
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      border-color: rgba(102, 126, 234, 0.7);
+      box-shadow: 0 0 10px rgba(102, 126, 234, 0.7);
+    }
+    50% {
+      border-color: rgba(102, 126, 234, 0.3);
+      box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    }
+    100% {
+      border-color: rgba(102, 126, 234, 0.7);
+      box-shadow: 0 0 10px rgba(102, 126, 234, 0.7);
+    }
+  }
+  
